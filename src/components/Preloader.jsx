@@ -2,7 +2,7 @@ import React from "react";
 import { Dna } from "react-loader-spinner";
 const Preloader = () => {
   return (
-    <div className="flex flex-col items-center justify-center px-5 top-[-60px]">
+    <div className="flex flex-col items-center justify-center px-5 py-5 m-[120px]">
       <Dna
         visible={true}
         height="80"

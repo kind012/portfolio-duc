@@ -24,10 +24,10 @@ const About = () => {
           </p>
         </div>
         <div className="flex flex-wrap justify-between gap-5 group ">
-          <div className="min-w[224px] duration-300 cursor-pointer border-2 border-slate-200 rounded-xl text-center bg-bg_light_primary p-6 flex-1 group-hover:blur-sm hover:!blur-none shadow-lg">
+          <div className="min-w[224px] duration-300 cursor-pointer border-2 border-slate-200 rounded-xl text-center bg-bg_light_primary p-6 flex-1 group-hover:blur-sm hover:!blur-none shadow-lg ">
             <img src={icon1} alt="javascript" className="mx-auto" />
             <h6 className="my-3">Javascript</h6>
-            <p className="leading-7">
+            <p className="leading-7 md:leading-normal">
               Javascript is an interpreted programming language developed from
               the concept of prototypes
             </p>

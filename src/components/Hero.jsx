@@ -13,11 +13,11 @@ const Hero = () => {
 
   return (
     <section id="hero">
-      <div className="relative min-h-screen ">
+      <div className="relative min-h-screen md:items-end md:flex-col">
         <div
           data-aos="slide-left"
           data-aos-delay="1200"
-          className="absolute h-[93%] md:w-3/12 w-8/12 top-0 right-0  bg-primaryLinear bottom-0"
+          className="absolute h-[93%] md:w-3/12 w-8/12 top-0 right-0  bg-primaryLinear bottom-0 rounded-lg "
         >
           <h1 className="rotate-90 absolute top-[30%] right-[-15%] text-[#EAF2FA]">
             THIEN {""}
@@ -27,7 +27,7 @@ const Hero = () => {
 
         {/* First-col */}
         <div
-          className="absolute top-[290px] left-[260px] items-center justify-center "
+          className="absolute top-[290px] left-[260px] items-center justify-center  "
           data-aos="fade-down"
         >
           <div>
@@ -41,7 +41,7 @@ const Hero = () => {
                   "And Designer",
                   2000,
                 ]}
-                className="text-blue-500"
+                className="text-blue-500 md:text-[37px]"
                 speed={50}
                 repeat={Infinity}
               />
