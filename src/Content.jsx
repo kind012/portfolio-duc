@@ -6,7 +6,6 @@ import logo3 from "./assets/images/javascript.svg";
 import logo4 from "./assets/images/reactjs.svg";
 import logo5 from "./assets/images/tailwind-css.svg";
 import logo6 from "./assets/images/figma.svg";
-import logo7 from "./assets/images/typescript.svg";
 import logo8 from "./assets/images/vsc.svg";
 import logo9 from "./assets/images/icons8-github-48.svg";
 import logo10 from "./assets/images/sass.svg";
@@ -93,9 +92,6 @@ export const content = {
       },
       {
         logo: logo6,
-      },
-      {
-        logo: logo7,
       },
       {
         logo: logo8,
