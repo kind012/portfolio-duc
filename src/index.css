@@ -18,13 +18,13 @@
     @apply text-dark_primary;
   }
   h1 {
-    @apply font-SignikaNegative lg:text-6xl text-3xl font-extrabold;
+    @apply text-3xl font-extrabold font-SignikaNegative lg:text-6xl;
   }
   h2 {
-    @apply font-SignikaNegative text-5xl font-bold;
+    @apply text-5xl font-bold font-SignikaNegative;
   }
   h3 {
-    @apply font-SignikaNegative text-5xl;
+    @apply text-5xl font-SignikaNegative;
   }
   h4 {
     @apply md:text-4xl text-3xl !leading-relaxed font-SignikaNegative;
@@ -47,7 +47,6 @@
 
 @layer utilities {
   .btn {
-    @apply py-2 px-9 border-2 rounded-md
-      border-dark_primary rounded-br-3xl font-medium;
+    @apply py-2 font-medium border-2 rounded-md px-9 border-dark_primary rounded-br-3xl;
   }
 }

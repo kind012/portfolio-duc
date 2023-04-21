@@ -12,7 +12,7 @@ const Contact = () => {
         </h2>
         <br />
 
-        <div className="flex flex-col-reverse justify-center gap-10 overflow-hidden xl:mt-12 xl:flex-row mb-5">
+        <div className="flex flex-col-reverse justify-center gap-10 mb-5 overflow-hidden xl:mt-12 xl:flex-row">
           <div className="flex-[0.4] bg-[#151031] p-8 rounded-2xl">
             <div className="flex gap-4">
               <p className="sm:text-[18px] text-[14px] uppercase tracking-wide text-gray">
@@ -53,7 +53,7 @@ const Contact = () => {
               </label>
               <button
                 type="submit"
-                className="bg-[#303245] py-3 px-8 outline-none w-fit text-white btn font-bold shadow-md shadow-inherit rounded-xl r"
+                className="bg-[#303245] py-3 px-8 outline-none w-fit text-white btn font-bold shadow-md shadow-inherit rounded-xl "
               >
                 Send
               </button>

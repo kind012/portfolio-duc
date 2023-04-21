@@ -2,6 +2,7 @@ import React from "react";
 import portfolio from "../assets/images/bg.png";
 import github from "../assets/images/icons8-github-48.svg";
 import { motion } from "framer-motion";
+import blog from "../assets/images/blog.png";
 
 const Project = () => {
   return (
@@ -57,7 +58,7 @@ const Project = () => {
                 </div>
                 <div className="flex flex-wrap gap-2 mt-4">
                   <p className="text-[14px] text-blue-500"># ReactJS</p>
-                  <p className="text-[14px] text-neutral-300"># Tailwindcss</p>
+                  <p className="text-[14px] text-cyan-500"># Tailwindcss</p>
                 </div>
               </motion.div>
             </div>
@@ -69,30 +70,31 @@ const Project = () => {
                 className="bg-[#151031] p-5 rounded-2xl sm:w-[360px] w-full"
               >
                 <div className="relative w-full h-[230px]">
-                  <img src={portfolio} alt="" className="rounded-2xl" />
+                  <img src={blog} alt="" className="rounded-2xl" />
                   <div className="absolute inset-0 flex justify-end m-2">
                     <div className="flex items-center justify-center w-10 h-10 rounded-full cursor-pointer">
-                      <img
-                        src={github}
-                        alt=""
-                        className="object-contain w-8 h-8"
-                      />
+                      <a href="https://github.com/kind012/blog-duc">
+                        <img
+                          src={github}
+                          alt=""
+                          className="object-contain w-8 h-8"
+                        />
+                      </a>
                     </div>
                   </div>
                 </div>
                 <div className="mt-1">
-                  <h3 className="text-white font-bold text-[24px] ">
-                    Duc Portfolio
-                  </h3>
+                  <h3 className="text-white font-bold text-[24px] ">Bloger</h3>
                   <p className="mt-2 text-[14px] text-gray">
-                    This is my personal portfolio, mainly this project I use
-                    ReactJS and style with Tailwind and Material UI and hooks in
+                    This is my blog, mainly this project I use ReactJS and style
+                    with Tailwind and and store data on Firebase and hooks in
                     ReactJS
                   </p>
                 </div>
                 <div className="flex flex-wrap gap-2 mt-4">
                   <p className="text-[14px] text-blue-500"># ReactJS</p>
-                  <p className="text-[14px] text-neutral-300"># Tailwindcss</p>
+                  <p className="text-[14px] text-cyan-500"># Tailwindcss</p>
+                  <p className="text-[14px] text-orange-500"># Firebase</p>
                 </div>
               </motion.div>
             </div>
