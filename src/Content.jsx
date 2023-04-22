@@ -11,8 +11,10 @@ import logo9 from "./assets/images/icons8-github-48.svg";
 import logo10 from "./assets/images/sass.svg";
 import { TbSmartHome } from "react-icons/tb";
 import { BiUser } from "react-icons/bi";
-import { RiServiceLine, RiProjectorLine } from "react-icons/ri";
+import { RiCustomerService2Fill } from "react-icons/ri";
 import { MdOutlinePermContactCalendar } from "react-icons/md";
+import { GoProject } from "react-icons/go";
+import { GiSkills } from "react-icons/gi";
 
 export const content = {
   nav: [
@@ -25,24 +27,24 @@ export const content = {
       icon: BiUser,
     },
     {
-      link: "#work",
-      icon: RiServiceLine,
+      link: "#study",
+      icon: MdOutlinePermContactCalendar,
     },
     {
       link: "#skill",
-      icon: RiProjectorLine,
+      icon: GiSkills,
     },
     {
       link: "#project",
-      icon: MdOutlinePermContactCalendar,
+      icon: GoProject,
     },
     {
       link: "#contact",
-      icon: MdOutlinePermContactCalendar,
+      icon: RiCustomerService2Fill,
     },
   ],
-  Work: {
-    work_content: [
+  Study: {
+    study_content: [
       {
         timeline: "10/2020 - Present",
         img: collage,

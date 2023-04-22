@@ -1,18 +1,33 @@
 import React from "react";
-import portfolio from "../assets/images/bg.png";
-import github from "../assets/images/icons8-github-48.svg";
 import { motion } from "framer-motion";
+import { useRef } from "react";
+import { useInView } from "framer-motion";
+
+import portfolio from "../assets/images/bg1.png";
+import github from "../assets/images/icons8-github-48.svg";
 import blog from "../assets/images/blog.png";
 
 const Project = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
   return (
     <section className="mb-10" id="project">
       <div className="min-h-screen px-5 md:container pt-14">
         <div>
           <p className="text-2xl font-normal md:text-3xl text-gray">Project</p>
-          <h2 className="text-[#06223F] ">
-            Oder<span className="text-blue-500">project</span>
-          </h2>
+          <div
+            ref={ref}
+            style={{
+              transform: isInView ? "none" : "translateX(-200px)",
+              opacity: isInView ? 1 : 0,
+              transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+            }}
+          >
+            <h2 className="text-[#06223F] ">
+              Oder<span className="text-blue-500">project</span>
+            </h2>
+          </div>
+
           <br />
           <div className="mb-10">
             <p className="max-w-3xl text-[17px] leading-[30px] font-medium ">
@@ -52,8 +67,8 @@ const Project = () => {
                   </h3>
                   <p className="mt-2 text-[14px] text-gray">
                     This is my personal portfolio, mainly this project I use
-                    ReactJS and style with Tailwind and Material UI and hooks in
-                    ReactJS
+                    ReactJS and style with Tailwind and Framer Motion do
+                    animation and hooks in ReactJS
                   </p>
                 </div>
                 <div className="flex flex-wrap gap-2 mt-4">

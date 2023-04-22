@@ -15,7 +15,7 @@ const Hero = () => {
     <section id="hero">
       <div className="relative min-h-screen md:items-end md:flex-col">
         <div
-          data-aos="slide-left"
+          data-aos="fade-top"
           data-aos-delay="1200"
           className="absolute h-[93%] md:w-3/12 w-8/12 top-0 right-0  bg-primaryLinear bottom-0 rounded-lg "
         >

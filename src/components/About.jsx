@@ -2,16 +2,31 @@ import React from "react";
 import icon1 from "../assets/images/javascript.svg";
 import icon2 from "../assets/images/reactjs.svg";
 import icon3 from "../assets/images/typescript.svg";
+
+import { useRef } from "react";
+import { useInView } from "framer-motion";
+
 const About = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
   return (
     <section className="min-h-screen bg-bg_light_primary" id="about">
       <div className="px-5 md:container py-14">
         <p className="text-2xl font-normal md:text-3xl text-gray">
           Introduction
         </p>
-        <h2 className="text-[#06223F] ">
-          Over<span className="text-blue-500">view</span>
-        </h2>
+        <div
+          ref={ref}
+          style={{
+            transform: isInView ? "none" : "translateX(-200px)",
+            opacity: isInView ? 1 : 0,
+            transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+          }}
+        >
+          <h2 className="text-[#06223F] ">
+            Over<span className="text-blue-500">view</span>
+          </h2>
+        </div>
         <br />
         <div className="mb-10">
           <p className="w-[65%]  text-base font-medium  ">
@@ -23,7 +38,15 @@ const About = () => {
             framework ​​I'm using and looking forward to in the near future:
           </p>
         </div>
-        <div className="flex flex-wrap justify-between gap-5 group ">
+        <div
+          className="flex flex-wrap justify-between gap-5 group "
+          ref={ref}
+          style={{
+            transform: isInView ? "none" : "translateX(-200px)",
+            opacity: isInView ? 1 : 0,
+            transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+          }}
+        >
           <div className="min-w[224px] duration-300 cursor-pointer border-2 border-slate-200 rounded-xl text-center bg-bg_light_primary p-6 flex-1 group-hover:blur-sm hover:!blur-none shadow-lg ">
             <img src={icon1} alt="javascript" className="mx-auto" />
             <h6 className="my-3">Javascript</h6>

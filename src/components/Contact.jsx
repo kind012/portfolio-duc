@@ -1,15 +1,28 @@
 import { React } from "react";
+import { useRef } from "react";
+import { useInView } from "framer-motion";
 
 const Contact = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
   return (
     <section className="min-h-screen bg-bg_light_primary" id="contact">
       <div className="px-5 md:container pt-14">
         <p className="mb-5 text-2xl font-normal md:text-3xl text-gray">
           Contact me
         </p>
-        <h2 className="text-[#06223F] mb-[50px]">
-          Get In <span className="text-blue-500">Touch</span>
-        </h2>
+        <div
+          ref={ref}
+          style={{
+            transform: isInView ? "none" : "translateX(-200px)",
+            opacity: isInView ? 1 : 0,
+            transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+          }}
+        >
+          <h2 className="text-[#06223F] mb-[50px]">
+            Get In <span className="text-blue-500">Touch</span>
+          </h2>
+        </div>
         <br />
 
         <div className="flex flex-col-reverse justify-center gap-10 mb-5 overflow-hidden xl:mt-12 xl:flex-row">
