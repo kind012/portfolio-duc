@@ -101,9 +101,10 @@ const Project = () => {
                 <div className="mt-1">
                   <h3 className="text-white font-bold text-[24px] ">Bloger</h3>
                   <p className="mt-2 text-[14px] text-gray">
-                    This is my blog, mainly this project I use ReactJS and style
-                    with Tailwind and and store data on Firebase and hooks in
-                    ReactJS
+                    This is my basic blog, mainly this project I use ReactJS and
+                    style with Tailwind and and store data on Firebase and hooks
+                    in ReactJS, this is simply show newly created blogs, and
+                    blogger creation page with tags, and a detail blog page
                   </p>
                 </div>
                 <div className="flex flex-wrap gap-2 mt-4">
