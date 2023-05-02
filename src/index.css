@@ -46,7 +46,7 @@
 }
 
 @layer utilities {
-  .btn {
-    @apply py-2 font-medium border-2 rounded-md px-9 border-dark_primary rounded-br-3xl;
+  .bg-gray-100 {
+    @apply bg-opacity-100  background-color: rgb(243 244 246);
   }
 }
