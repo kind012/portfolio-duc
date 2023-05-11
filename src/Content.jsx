@@ -6,9 +6,11 @@ import logo3 from "./assets/images/javascript.svg";
 import logo4 from "./assets/images/reactjs.svg";
 import logo5 from "./assets/images/tailwind-css.svg";
 import logo6 from "./assets/images/figma.svg";
+import logo7 from "./assets/images/pts.svg";
 import logo8 from "./assets/images/vsc.svg";
 import logo9 from "./assets/images/icons8-github-48.svg";
 import logo10 from "./assets/images/sass.svg";
+import logo11 from "./assets/images/redux.svg";
 import { TbSmartHome } from "react-icons/tb";
 import { BiUser } from "react-icons/bi";
 import { RiCustomerService2Fill } from "react-icons/ri";
@@ -59,20 +61,6 @@ export const content = {
         name: "F8 Học Lập Trình Để Đi Làm",
         desc: "“I study Javasrcipt and ReactJS, do exercises and small projects at F8.Proficient in Javascript and ReactJS”",
       },
-      {
-        timeline: "03/2022 - Present",
-        img: learning,
-        title: "Learning code in F8",
-        name: "F8 Học Lập Trình Để Đi Làm",
-        desc: "“I study Javasrcipt and ReactJS, do exercises and small projects at F8.Proficient in Javascript and ReactJS”",
-      },
-      {
-        timeline: "03/2022 - Present",
-        img: learning,
-        title: "Learning code in F8",
-        name: "F8 Học Lập Trình Để Đi Làm",
-        desc: "“I study Javasrcipt and ReactJS, do exercises and small projects at F8.Proficient in Javascript and ReactJS”",
-      },
     ],
   },
   Skills: {
@@ -96,6 +84,9 @@ export const content = {
         logo: logo6,
       },
       {
+        logo: logo7,
+      },
+      {
         logo: logo8,
       },
       {
@@ -103,6 +94,9 @@ export const content = {
       },
       {
         logo: logo10,
+      },
+      {
+        logo: logo11,
       },
     ],
   },

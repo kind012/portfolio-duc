@@ -10,7 +10,7 @@ const Skill = () => {
   return (
     <section className="min-h-screen bg-bg_light_primary" id="skill">
       <div className="px-5 md:container pt-14">
-        <p className="mb-5 text-2xl font-normal md:text-3xl text-gray">Skill</p>
+        <p className="mb-2 text-2xl font-normal md:text-3xl text-gray">Skill</p>
         <div ref={ref}>
           <h2
             className="text-[#06223F] mb-[120px]"
@@ -24,16 +24,10 @@ const Skill = () => {
           </h2>
         </div>
 
-        <br />
-        <div className="flex flex-wrap items-center justify-center gap-4 ">
+        <div className="grid items-center grid-cols-5 gap-4 ml-7 ">
           {Skills.skill_content.map((skill, i) => (
-            <div
-              key={i}
-              className="relative flex justify-center items-center w-full max-w-[12rem] gap-5 p-5 bg-white group rounded-3xl"
-            >
-              <div className="">
-                <img src={skill.logo} alt="" className="w-10" />
-              </div>
+            <div key={i} className="  w-full max-w-[12rem] gap-5 p-5 ">
+              <img src={skill.logo} alt="" className="h-[80px] md:h-[80px]" />
             </div>
           ))}
         </div>

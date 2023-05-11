@@ -1,6 +1,4 @@
-import { React, useState } from "react";
-import { Pagination } from "swiper";
-import { Swiper, SwiperSlide } from "swiper/react";
+import { React } from "react";
 import { content } from "../Content";
 import { useRef } from "react";
 import { useInView } from "framer-motion";
@@ -10,7 +8,6 @@ import "swiper/css/pagination";
 
 const Study = () => {
   const { Study } = content;
-  const [activeIndex, setActiveIndex] = useState(0);
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
@@ -34,39 +31,20 @@ const Study = () => {
         </div>
         <br />
 
-        <Swiper
-          direction={"vertical"}
-          pagination={{
-            clickable: true,
-          }}
-          loop={true}
-          spaceBetween={40}
-          slidesPerView={1.7}
-          onSlideChange={(e) => {
-            console.log(e.realIndex);
-            setActiveIndex(e.realIndex);
-          }}
-          modules={[Pagination]}
-          className="md:h-96 h-[640px] max-w-3xl"
-        >
-          {Study.study_content.map((content, i) => (
-            <SwiperSlide key={i}>
-              <div
-                className={`duration-500 bg-bg_light_primary mx-8 border-2 p-8 h-full rounded-2xl flex items-center gap-6 border-slate-200 md:flex-row ${
-                  activeIndex !== i && "scale-75 blur-sm"
-                }`}
-              >
-                <img src={content.img} alt="" className="h-24" />
-                <div>
-                  <p className="text-sm sm:text-base">{content.timeline}</p>
-                  <h6 className="mt-[20px]">{content.title}</h6>
-                  <p className="mb-5">{content.name}</p>
-                  <p>{content.desc}</p>
-                </div>
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
+        {Study.study_content.map((content, i) => (
+          <div
+            className="flex items-center h-full gap-6 p-8 mx-8 mb-5 border-2 bg-bg_light_primary rounded-2xl border-slate-200 md:flex-row lg:max-w-[900px]"
+            key={i}
+          >
+            <img src={content.img} alt="" className="h-24" />
+            <div>
+              <p className="text-sm sm:text-base">{content.timeline}</p>
+              <h6 className="mt-[20px]">{content.title}</h6>
+              <p className="mb-5">{content.name}</p>
+              <p>{content.desc}</p>
+            </div>
+          </div>
+        ))}
       </div>
     </section>
   );

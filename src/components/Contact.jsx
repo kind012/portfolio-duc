@@ -73,6 +73,9 @@ const Contact = () => {
             </form>
           </div>
         </div>
+        <div className="pt-5 text-center mb-[50px]">
+          <p className="text-base">Build and design by Tran Thien Duc </p>
+        </div>
       </div>
     </section>
   );
