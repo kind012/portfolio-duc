@@ -51,7 +51,7 @@ const Project = () => {
                   <img src={portfolio} alt="" className="rounded-2xl" />
                   <div className="absolute inset-0 flex justify-end m-2">
                     <div className="flex items-center justify-center w-10 h-10 rounded-full cursor-pointer">
-                      <a href="https://github.com/kind012/figma-demo">
+                      <a href="https://github.com/kind012/portfolio-duc/tree/main">
                         <img
                           src={github}
                           alt=""
