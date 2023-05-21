@@ -8,9 +8,9 @@ import "swiper/css/pagination";
 
 const Study = () => {
   const { Study } = content;
+
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
-
   return (
     <section id="study">
       <div className="px-5 md:container pt-14">

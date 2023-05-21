@@ -1,16 +1,8 @@
 import React from "react";
-import { Dna } from "react-loader-spinner";
 const Preloader = () => {
   return (
-    <div className="flex flex-col items-center justify-center px-5 py-5 m-[120px]">
-      <Dna
-        visible={true}
-        height="80"
-        width="80"
-        ariaLabel="dna-loading"
-        wrapperStyle={{}}
-        wrapperClass="dna-wrapper"
-      />
+    <div className="absolute flex flex-wrap transform top-1/2 left-1/2 -translate-y-2/4 -translate-x-2/4">
+      <div className="w-10 h-10 border-4 border-blue-500 rounded-full animate-spin border-t-transparent"></div>
     </div>
   );
 };

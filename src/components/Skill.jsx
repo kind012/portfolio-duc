@@ -26,7 +26,10 @@ const Skill = () => {
 
         <div className="grid items-center grid-cols-5 gap-4 ml-7 ">
           {Skills.skill_content.map((skill, i) => (
-            <div key={i} className="  w-full max-w-[12rem] gap-5 p-5 ">
+            <div
+              key={i}
+              className="  w-full max-w-[12rem] gap-5 p-5  will-change-transform transition-transform hover:transform hover:translate-y-[-10px] "
+            >
               <img src={skill.logo} alt="" className="h-[80px] md:h-[80px]" />
             </div>
           ))}
