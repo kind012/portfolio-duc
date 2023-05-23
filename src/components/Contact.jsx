@@ -1,10 +1,8 @@
 import { React } from "react";
-import { useRef } from "react";
-import { useInView } from "framer-motion";
+import { useView } from "../hooks/useView";
 
 const Contact = () => {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
+  const { ref, isInView } = useView();
   return (
     <section className="min-h-screen bg-bg_light_primary" id="contact">
       <div className="px-5 md:container pt-14">

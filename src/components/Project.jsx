@@ -1,15 +1,13 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { useRef } from "react";
-import { useInView } from "framer-motion";
+import { useView } from "../hooks/useView";
 
 import portfolio from "../assets/images/bg1.png";
 import github from "../assets/images/icons8-github-48.svg";
 import blog from "../assets/images/blog.png";
 
 const Project = () => {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
+  const { ref, isInView } = useView();
   return (
     <section className="mb-10" id="project">
       <div className="min-h-screen px-5 md:container pt-14">

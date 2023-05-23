@@ -1,11 +1,9 @@
 import React from "react";
-import { content } from "../Content";
-import { useRef } from "react";
-import { useInView } from "framer-motion";
+import { content } from "../utils/Content";
+import { useView } from "../hooks/useView";
 
 const Skill = () => {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
+  const { ref, isInView } = useView();
   const { Skills } = content;
   return (
     <section className="min-h-screen bg-bg_light_primary" id="skill">
@@ -25,9 +23,9 @@ const Skill = () => {
         </div>
 
         <div className="grid items-center grid-cols-5 gap-4 ml-7 ">
-          {Skills.skill_content.map((skill, i) => (
+          {Skills.skill_content.map((skill) => (
             <div
-              key={i}
+              key={skill.id}
               className="  w-full max-w-[12rem] gap-5 p-5  will-change-transform transition-transform hover:transform hover:translate-y-[-10px] "
             >
               <img src={skill.logo} alt="" className="h-[80px] md:h-[80px]" />

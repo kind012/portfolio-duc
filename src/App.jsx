@@ -5,7 +5,7 @@ import Study from "./components/Study";
 import Skill from "./components/Skill";
 import Project from "./components/Project";
 import Contact from "./components/Contact";
-import Preloader from "./components/Preloader";
+import Preloader from "./Layout/Preloader";
 import { useEffect, useState } from "react";
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
     }, 500);
   });
   return (
-    <div>
+    <>
       {isLoading ? (
         <Preloader />
       ) : (
@@ -31,7 +31,7 @@ function App() {
           <Contact />
         </div>
       )}
-    </div>
+    </>
   );
 }
 

@@ -1,5 +1,5 @@
 import React, { createElement, useState } from "react";
-import { content } from "../Content";
+import { content } from "../utils/Content";
 
 const Navbar = () => {
   const { nav } = content;

@@ -1,16 +1,14 @@
 import { React } from "react";
-import { content } from "../Content";
-import { useRef } from "react";
-import { useInView } from "framer-motion";
+import { content } from "../utils/Content";
+import { useView } from "../hooks/useView";
 
 import "swiper/css";
 import "swiper/css/pagination";
 
 const Study = () => {
   const { Study } = content;
+  const { ref, isInView } = useView();
 
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
   return (
     <section id="study">
       <div className="px-5 md:container pt-14">
@@ -31,10 +29,10 @@ const Study = () => {
         </div>
         <br />
 
-        {Study.study_content.map((content, i) => (
+        {Study.study_content.map((content) => (
           <div
             className="flex items-center h-full gap-6 p-8 mx-8 mb-5 border-2 bg-bg_light_primary rounded-2xl border-slate-200 md:flex-row lg:max-w-[900px]"
-            key={i}
+            key={content.id}
           >
             <img src={content.img} alt="" className="h-24" />
             <div>

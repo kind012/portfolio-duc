@@ -1,16 +1,9 @@
 import React from "react";
-import icon1 from "../assets/images/javascript.svg";
-import icon2 from "../assets/images/reactjs.svg";
-import icon3 from "../assets/images/typescript.svg";
-import icon4 from "../assets/images/tailwind-css.svg";
 import img1 from "../assets/images/programing.svg";
-
-import { useRef } from "react";
-import { useInView } from "framer-motion";
+import { useView } from "../hooks/useView";
 
 const About = () => {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
+  const { ref, isInView } = useView();
   return (
     <section className="min-h-screen " id="about">
       <div className="px-5 md:container py-14">
@@ -39,15 +32,7 @@ const About = () => {
             my skills, so I want to become a front-end developer .
           </p>
         </div>
-        <div
-          className="flex gap-[50px] justify-center items-center"
-          // ref={ref}
-          // style={{
-          //   transform: isInView ? "none" : "translateX(-200px)",
-          //   opacity: isInView ? 1 : 0,
-          //   transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
-          // }}
-        >
+        <div className="flex gap-[50px] justify-center items-center">
           <div>
             <img src={img1} alt="" className="w-full max-w-[530px] " />
           </div>
