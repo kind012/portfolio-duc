@@ -8,10 +8,10 @@ const Hero = () => {
     delaySpeed: 2000,
   });
 
-  const downloadCV = () => {
+  const ContactMe = () => {
     const a = document.createElement("a");
     // Duong dan file pdf  tranthienduc-FrontEndDev-12345.pdf
-    a.href = "/";
+    a.href = "https://www.facebook.com/tranthienduc1001";
     a.click();
   };
 
@@ -31,11 +31,11 @@ const Hero = () => {
           <div>
             <button
               className="relative w-48 h-12 overflow-hidden text-lg bg-white rounded-lg shadow group "
-              onClick={downloadCV}
+              onClick={ContactMe}
             >
               <div className="absolute inset-0 w-0 bg-gradient-to-br from-purple-600 to-blue-500  focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 transition-all duration-[250ms] ease-out group-hover:w-full "></div>
               <span className="relative text-black group-hover:text-white">
-                Dowload CV
+                Contact Me
               </span>
             </button>
           </div>

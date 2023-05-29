@@ -13,7 +13,6 @@ import logo10 from "../assets/images/sass.svg";
 import logo11 from "../assets/images/redux.svg";
 import { TbSmartHome } from "react-icons/tb";
 import { BiUser } from "react-icons/bi";
-import { RiCustomerService2Fill } from "react-icons/ri";
 import { MdOutlinePermContactCalendar } from "react-icons/md";
 import { GoProject } from "react-icons/go";
 import { GiSkills } from "react-icons/gi";
@@ -39,10 +38,6 @@ export const content = {
     {
       link: "#project",
       icon: GoProject,
-    },
-    {
-      link: "#contact",
-      icon: RiCustomerService2Fill,
     },
   ],
   Study: {

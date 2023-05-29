@@ -114,6 +114,9 @@ const Project = () => {
             </div>
           </div>
         </div>
+        <div className="mt-5 text-center">
+          <p className="text-base">Build and design by Tran Thien Duc </p>
+        </div>
       </div>
     </section>
   );
